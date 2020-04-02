@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 android:background="@color/background"
+	 android:elevation="5dp"
+	 tools:context=".MainActivity">
+	 <androidx.constraintlayout.widget.ConstraintLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+
+		  <FrameLayout
+			   android:id="@+id/container"
+			   android:layout_width="0dp"
+			   android:layout_height="539dp"
+			   android:layout_marginStart="5dp"
+			   android:layout_marginTop="5dp"
+			   android:layout_marginEnd="5dp"
+			   android:layout_marginBottom="5dp"
+			   app:layout_constraintBottom_toBottomOf="parent"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+		  </FrameLayout>
+
+		  <LinearLayout
+			   android:id="@+id/linearLayout2"
+			   android:layout_width="0dp"
+			   android:layout_height="60dp"
+			   android:layout_marginStart="24dp"
+			   android:layout_marginTop="130dp"
+			   android:layout_marginEnd="24dp"
+			   android:background="@drawable/linerlayout_shap"
+			   android:elevation="5dp"
+			   android:orientation="horizontal"
+			   android:padding="2dp"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+			   <Button
+					android:id="@+id/btnStepOne"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:layout_weight="1"
+					android:background="@drawable/btn_shap"
+					android:text="@string/info_item"
+					style="?buttonBarButtonStyle"
+					android:textColor="@color/white"
+					android:textStyle="bold" />
+
+			   <Button
+					android:id="@+id/btnStepTwo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:layout_weight="1"
+					android:background="@drawable/unselect_btn_shap"
+					android:text="@string/contact_us"
+					android:textColor="@color/orange"
+					style="?buttonBarButtonStyle"
+					android:textStyle="bold" />
+		  </LinearLayout>
+
+		  <LinearLayout
+			   android:id="@+id/linearLayout"
+			   android:layout_width="0dp"
+			   android:layout_height="150dp"
+			   android:background="@color/colorPrimary"
+			   android:orientation="vertical"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toTopOf="parent"/>
+
+		  <TextView
+			   android:id="@+id/businessName"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:text="@string/mango_fruit"
+			   android:textColor="@android:color/background_light"
+			   android:textSize="24sp"
+			   android:textStyle="bold"
+			   app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="@+id/linearLayout"
+			   app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+	 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
